@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Configurações
-KEY_DIR="C:/Users/gabri/.ssh"  # Diretório das chaves
+KEY_DIR=""  # Diretório das chaves
 PRIVATE_KEY="$KEY_DIR/id_rsa"  # Caminho da chave privada
 PUBLIC_KEY="$PRIVATE_KEY.pub"  # Caminho da chave pública
 
-REMOTE_HOST="172.16.9.105"  # Endereço do servidor remoto (fogcomputing)
-REMOTE_USER="fogcomputing"  # Usuário no servidor remoto
-LOCAL_MODEL_PATH="C:/Users/gabri/Área de Trabalho/tcc/tcc2-FL/pretrained_model_datasetfinalgf.keras"  # Caminho local do arquivo
-REMOTE_MODEL_PATH="/home/fogcomputing/Downloads/flower-24/scripts/models"  # Caminho remoto do arquivo
+REMOTE_HOST=""  # Endereço do servidor remoto 
+REMOTE_USER=""  # Usuário no servidor remoto
+LOCAL_MODEL_PATH="pretrained_model_datasetfinalgf.keras"  # Caminho local do arquivo
+REMOTE_MODEL_PATH="scripts/models"  # Caminho remoto do arquivo
 
 # Gera a chave SSH se não existir
 generate_ssh_key() {
